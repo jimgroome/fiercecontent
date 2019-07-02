@@ -10,6 +10,7 @@ h4 {
 .section {
   min-height: 100vh;
   position: relative;
+  text-align: center;
   > .container-fluid,
   > .container {
     @include media-breakpoint-up(md) {
@@ -20,14 +21,13 @@ h4 {
     }
   }
 }
-.section1 {
-  text-align: center;
-}
 .section2 {
+  text-align: initial;
+  .section-title {
+    text-align: center;
+  }
   img {
     max-width: 100%;
+    margin-bottom: 1rem;
   }
-}
-.section-title {
-  text-align: center;
 }

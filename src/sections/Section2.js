@@ -12,8 +12,11 @@ const Section2 = () => {
         </Row>
         <Row>
           <Col xs='12' md='4'>
+            <img
+              src={process.env.PUBLIC_URL + "/col1-min.jpg"}
+              alt='A really good copywriter'
+            />
             <h3>A really good copywriter</h3>
-            <img src='/col1-min.jpg' alt='A really good copywriter' />
             <p>
               Got writers&rsquo; block? I&rsquo;ve written over 5.2 million
               words in my career, so I know the good ones by now! Let&rsquo;s
@@ -30,8 +33,11 @@ const Section2 = () => {
             </ul>
           </Col>
           <Col xs='12' md='4'>
+            <img
+              src={process.env.PUBLIC_URL + "/col2-min.jpg"}
+              alt='A really good copywriter'
+            />
             <h3>Kick-arse creative ideas</h3>
-            <img src='/col2-min.jpg' alt='A really good copywriter' />
             <p>
               Stuck in a rut? I can shake the cobwebs away and come up with
               creative campaign ideas that will catch your prospects&rsquo; eye.
@@ -48,8 +54,11 @@ const Section2 = () => {
             </ul>
           </Col>
           <Col xs='12' md='4'>
+            <img
+              src={process.env.PUBLIC_URL + "/col3-min.jpg"}
+              alt='A really good copywriter'
+            />
             <h3>Content marketing strategy</h3>
-            <img src='/col3-min.jpg' alt='A really good copywriter' />
             <p>
               Not sure where to start? I can clarify the bigger picture and
               define how you represent yourself in the public space. Let&rsquo;s
