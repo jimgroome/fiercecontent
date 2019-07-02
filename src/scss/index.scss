@@ -17,6 +17,8 @@ h4 {
   position: relative;
   text-align: center;
   padding-bottom: 2rem;
+  background: transparent no-repeat top left;
+  background-size: cover;
   > .container-fluid,
   > .container {
     @include media-breakpoint-up(md) {
@@ -27,16 +29,42 @@ h4 {
     }
   }
 }
+.section1 {
+  background-image: url(/bg1.jpg);
+  // color: white;
+}
 .section2 {
+  background-image: url(/bg2.jpg);
   text-align: initial;
   .section-title {
     text-align: center;
   }
   img {
     max-width: 100%;
-    margin-bottom: 1rem;
   }
 }
+.section3 {
+  background-image: url(/bg3.jpg);
+}
+.section4 {
+  background-image: url(/bg4.jpg);
+}
 .section-title {
+  margin-bottom: 1rem;
+}
+.slick-slider {
+  margin-bottom: 1rem;
+}
+.slick-slide {
+  padding: 1rem;
+  position: relative;
+  > div {
+    > img {
+      display: inline !important;
+      max-height: 100%;
+    }
+  }
+}
+.card-deck {
   margin-bottom: 1rem;
 }

@@ -4,7 +4,7 @@ import { Container, Row, Col } from "reactstrap";
 const Footer = () => {
   return (
     <footer className='site-footer'>
-      <Container>
+      <Container fluid>
         <Row>
           <Col>
             <p>
