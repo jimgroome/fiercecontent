@@ -24,7 +24,7 @@ const Section1 = () => {
               I’ll bring 10+ years of B2B and B2C copywriting experience to your
               table. Let’s get creative!
             </p>
-            <Button>Give me a roar</Button>
+            <Button color='primary'>Give me a roar</Button>
           </Col>
         </Row>
       </Container>

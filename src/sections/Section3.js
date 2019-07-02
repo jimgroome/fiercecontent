@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "reactstrap";
+import Carousel from "./Carousel";
 
 const Section3 = () => {
   return (
@@ -18,12 +19,11 @@ const Section3 = () => {
               way. After 10+ years in the business, I know that everybody has a
               story to tell; it&rsquo;s my job to get the words right.
             </p>
-            <p>
-              [Verifone, Doddle, Intel, Microsoft, Mercedes-Benz, MotorSport
-              Vision, Autosport International, SAP, ShopperTrak]
-            </p>
+
+            <Carousel />
+
             <p className='text-center'>
-              <Button>Connect with me on LinkedIn</Button>
+              <Button color='primary'>Connect with me on LinkedIn</Button>
             </p>
           </Col>
         </Row>

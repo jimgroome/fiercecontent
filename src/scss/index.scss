@@ -1,5 +1,10 @@
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
 @import url("https://fonts.googleapis.com/css?family=Special+Elite&display=swap");
+
+@import "./variables";
+@import "./bootswatch";
 
 h1,
 h2,
@@ -11,6 +16,7 @@ h4 {
   min-height: 100vh;
   position: relative;
   text-align: center;
+  padding-bottom: 2rem;
   > .container-fluid,
   > .container {
     @include media-breakpoint-up(md) {
@@ -30,4 +36,7 @@ h4 {
     max-width: 100%;
     margin-bottom: 1rem;
   }
+}
+.section-title {
+  margin-bottom: 1rem;
 }

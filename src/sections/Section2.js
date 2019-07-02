@@ -75,7 +75,7 @@ const Section2 = () => {
         <Row>
           <Col>
             <p className='text-center'>
-              <Button className='text-center'>Let&rsquo;s talk shop</Button>
+              <Button color='primary'>Let&rsquo;s talk shop</Button>
             </p>
           </Col>
         </Row>
