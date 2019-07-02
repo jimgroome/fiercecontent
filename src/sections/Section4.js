@@ -4,10 +4,10 @@ import { Container, Row, Col, Button } from "reactstrap";
 const Section4 = () => {
   return (
     <div className='section section4'>
-      <Container fluid>
+      <Container>
         <Row>
           <Col>
-            <h2>What gets me fired up?</h2>
+            <h2 className='section-title'>What gets me fired up?</h2>
             <p>
               Great work! Collaborating should be fun, energising and inspiring.
               We&rsquo;re here for a good time, not a long time!

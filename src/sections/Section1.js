@@ -4,10 +4,14 @@ import { Container, Row, Col, Button } from "reactstrap";
 const Section1 = () => {
   return (
     <div className='section section1'>
-      <Container fluid>
+      <Container>
         <Row>
           <Col>
-            <h1 className='site-logo'>Fierce Content</h1>
+            <img
+              src={process.env.PUBLIC_URL + "/fierce-content-logo-square.png"}
+              alt='Fierce Content'
+            />
+            <h1 className='section-title'>Fierce Content</h1>
             <p>Strongly worded copy for your business, brand or agency</p>
             <p>
               Is your tone of voice missing true personality? Does your content

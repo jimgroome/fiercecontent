@@ -4,10 +4,10 @@ import { Container, Row, Col, Button } from "reactstrap";
 const Section3 = () => {
   return (
     <div className='section section3'>
-      <Container fluid>
+      <Container>
         <Row>
           <Col>
-            <h2>Who am I?</h2>
+            <h2 className='section-title'>Who am I?</h2>
             <p>
               Chelsea Groome: Fierce Content founder and experienced B2B &amp;
               B2C copywriter.
@@ -22,7 +22,9 @@ const Section3 = () => {
               [Verifone, Doddle, Intel, Microsoft, Mercedes-Benz, MotorSport
               Vision, Autosport International, SAP, ShopperTrak]
             </p>
-            <Button>Connect with me on LinkedIn</Button>
+            <p className='text-center'>
+              <Button>Connect with me on LinkedIn</Button>
+            </p>
           </Col>
         </Row>
       </Container>
