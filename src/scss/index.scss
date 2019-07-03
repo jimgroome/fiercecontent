@@ -16,10 +16,9 @@ h4 {
   min-height: 100vh;
   position: relative;
   text-align: center;
-  padding-bottom: 2rem;
   background: transparent no-repeat top left;
   background-size: cover;
-  padding: 1rem 0;
+  padding: 2rem 0;
   > .container-fluid,
   > .container {
     @include media-breakpoint-up(md) {
