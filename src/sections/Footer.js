@@ -6,37 +6,46 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
-    <footer className='site-footer'>
+    <footer className="site-footer">
       <Container fluid>
         <Row>
-          <Col xs='8'>
+          <Col xs="8">
             <p>&copy; 2019 Fierce Content</p>
           </Col>
-          <Col xs='4'>
-            <ul className='text-right list-inline'>
-              <li className='list-inline-item'>
+          <Col xs="4">
+            <ul className="text-right list-inline">
+              <li className="list-inline-item">
                 <a
-                  href='mailto:chelsea@fierce-content.com'
-                  target='_blank'
-                  rel='noopener noreferrer'
+                  href="mailto:chelsea@fierce-content.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  chelsea@fierce-content.com
+                </a>
+              </li>
+              <li className="list-inline-item">
+                <a
+                  href="mailto:chelsea@fierce-content.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon icon={faEnvelope} />
                 </a>
               </li>
-              <li className='list-inline-item'>
+              <li className="list-inline-item">
                 <a
-                  href='https://uk.linkedin.com/company/fierce-content'
-                  target='_blank'
-                  rel='noopener noreferrer'
+                  href="https://uk.linkedin.com/company/fierce-content"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </li>
-              <li className='list-inline-item'>
+              <li className="list-inline-item">
                 <a
-                  href='https://twitter.com/fierce_content'
-                  target='_blank'
-                  rel='noopener noreferrer'
+                  href="https://twitter.com/fierce_content"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon icon={faTwitter} />
                 </a>

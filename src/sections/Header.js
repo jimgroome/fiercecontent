@@ -15,20 +15,20 @@ const Header = () => {
         />
         Fierce Content
       </NavbarBrand>
-      <Nav className="ml-auto" navbar>
+      <Nav className="ml-auto header-links" navbar>
         <NavItem>
           <NavLink href="mailto:chelsea@fierce-content.com">
-            <FontAwesomeIcon icon={faEnvelope} />
+            <FontAwesomeIcon icon={faEnvelope} size="lg" />
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="https://uk.linkedin.com/company/fierce-content">
-            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon icon={faLinkedin} size="lg" />
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="https://twitter.com/fierce_content">
-            <FontAwesomeIcon icon={faTwitter} />
+            <FontAwesomeIcon icon={faTwitter} size="lg" />
           </NavLink>
         </NavItem>
       </Nav>
