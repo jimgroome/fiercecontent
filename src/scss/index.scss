@@ -11,7 +11,8 @@ h2,
 h3,
 h4,
 p,
-li {
+li,
+.navbar-brand {
   font-family: "Special Elite", monospace;
 }
 .section {
@@ -85,4 +86,9 @@ li {
 }
 .site-footer {
   padding: 1rem 0;
+}
+.navbar {
+  .site-logo {
+    max-height: 56px;
+  }
 }
