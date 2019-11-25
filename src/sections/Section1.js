@@ -35,10 +35,9 @@ const Section1 = () => {
               <CardBody>
                 <CardText tag="div">
                   <p>
-                    Is your tone of voice missing true personality? Does your
-                    content lack that certain sparkle? Do you simply not have
-                    the time to write that piece of work you so desperately
-                    need?
+                    Is your tone of voice missing personality? Does your content
+                    lack sparkle? Do you simply not have the time to write all
+                    the work that you need?
                   </p>
                   <p>Let me help.</p>
                   <p>
