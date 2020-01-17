@@ -3,7 +3,6 @@ import {
   Container,
   Row,
   Col,
-  Button,
   Card,
   CardImg,
   CardBody,
@@ -14,11 +13,11 @@ import {
 
 const Section2 = () => {
   return (
-    <div className='section section2'>
+    <div className="section section2">
       <Container>
         <Row>
           <Col>
-            <h2 className='section-title'>What are you looking for?</h2>
+            <h2 className="section-title">What are you looking for?</h2>
           </Col>
         </Row>
         <Row>
@@ -27,13 +26,13 @@ const Section2 = () => {
               <Card>
                 <CardImg
                   top
-                  width='100%'
+                  width="100%"
                   src={process.env.PUBLIC_URL + "/col1-min.jpg"}
-                  alt='A really good copywriter'
+                  alt="A really good copywriter"
                 />
                 <CardBody>
-                  <CardTitle tag='h3'>A really good copywriter</CardTitle>
-                  <CardText tag='div'>
+                  <CardTitle tag="h3">A really good copywriter</CardTitle>
+                  <CardText tag="div">
                     <p>
                       Got writers&rsquo; block? I&rsquo;ve written over 5.2
                       million words in my career, so I know the good ones by
@@ -54,13 +53,13 @@ const Section2 = () => {
               <Card>
                 <CardImg
                   top
-                  width='100%'
+                  width="100%"
                   src={process.env.PUBLIC_URL + "/col2-min.jpg"}
-                  alt='Kick-arse creative ideas'
+                  alt="Kick-arse creative ideas"
                 />
                 <CardBody>
-                  <CardTitle tag='h3'>Kick-arse creative ideas</CardTitle>
-                  <CardText tag='div'>
+                  <CardTitle tag="h3">Kick-arse creative ideas</CardTitle>
+                  <CardText tag="div">
                     <p>
                       Stuck in a rut? I can shake the cobwebs away and come up
                       with creative campaign ideas that will catch your
@@ -81,13 +80,13 @@ const Section2 = () => {
               <Card>
                 <CardImg
                   top
-                  width='100%'
+                  width="100%"
                   src={process.env.PUBLIC_URL + "/col3-min.jpg"}
-                  alt='Content marketing strategy'
+                  alt="Content marketing strategy"
                 />
                 <CardBody>
-                  <CardTitle tag='h3'>Content marketing strategy</CardTitle>
-                  <CardText tag='div'>
+                  <CardTitle tag="h3">Content marketing strategy</CardTitle>
+                  <CardText tag="div">
                     <p>
                       Not sure where to start? I can clarify the bigger picture
                       and define how you represent yourself in the public space.
@@ -109,8 +108,13 @@ const Section2 = () => {
         </Row>
         <Row>
           <Col>
-            <p className='text-center'>
-              <Button color='primary'>Let&rsquo;s talk shop</Button>
+            <p className="text-center">
+              <a
+                className="btn btn-primary"
+                href="mailto:chelsea@fierce-content.com"
+              >
+                Let&rsquo;s talk shop
+              </a>
             </p>
           </Col>
         </Row>

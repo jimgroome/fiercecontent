@@ -32,7 +32,14 @@ const Section4 = () => {
                     to our families. It&rsquo;s all about balance.
                   </p>
                 </CardText>
-                <Button color="primary">Give me a roar</Button>
+                <p className="text-center">
+                  <a
+                    className="btn btn-primary"
+                    href="mailto:chelsea@fierce-content.com"
+                  >
+                    Give me a roar
+                  </a>
+                </p>
               </CardBody>
             </Card>
           </Col>

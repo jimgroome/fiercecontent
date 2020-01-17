@@ -3,7 +3,6 @@ import {
   Container,
   Row,
   Col,
-  Button,
   Card,
   CardBody,
   CardTitle,
@@ -13,16 +12,16 @@ import Carousel from "./Carousel";
 
 const Section3 = () => {
   return (
-    <div className='section section3'>
+    <div className="section section3">
       <Container>
         <Row>
-          <Col xs='12' md={{ size: 8, offset: 2 }}>
+          <Col xs="12" md={{ size: 8, offset: 2 }}>
             <Card>
               <CardBody>
-                <CardTitle tag='h2' className='section-title'>
+                <CardTitle tag="h2" className="section-title">
                   Who am I?
                 </CardTitle>
-                <CardText tag='div'>
+                <CardText tag="div">
                   <p>
                     Chelsea Groome: Fierce Content founder and experienced B2B
                     &amp; B2C copywriter.
@@ -36,7 +35,14 @@ const Section3 = () => {
                   </p>
                   <Carousel />
                 </CardText>
-                <Button color='primary'>Connect with me on LinkedIn</Button>
+                <p className="text-center">
+                  <a
+                    className="btn btn-primary"
+                    href="mailto:chelsea@fierce-content.com"
+                  >
+                    Connect with me on LinkedIn
+                  </a>
+                </p>
               </CardBody>
             </Card>
           </Col>
