@@ -6,8 +6,12 @@ import Section3 from "./sections/Section3";
 import Section4 from "./sections/Section4";
 import Footer from "./sections/Footer";
 
+import ReactGA from 'react-ga';
+
 function App() {
-  return (
+  ReactGA.initialize('UA-142839175-4');
+  ReactGA.pageview(window.location.pathname + window.location.search);
+    return (
     <div className="App">
       <Header />
       <Section1 />
