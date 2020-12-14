@@ -7,18 +7,13 @@ const Section1 = () => {
       <Container>
         <Row>
           <Col>
-            <img
-              src={process.env.PUBLIC_URL + "/fierce-content-logo-square.png"}
-              alt="Fierce Content"
-            />
+            <img src={process.env.PUBLIC_URL + "/fierce-content-logo-square.png"} alt="Fierce Content" />
           </Col>
         </Row>
         <Row>
           <Col>
             <h1 className="site-title">Fierce Content</h1>
-            <p className="site-tagline">
-              Strongly worded copy for your business, brand or agency
-            </p>
+            <p className="site-tagline">Strongly worded copy for your business, brand or agency</p>
           </Col>
         </Row>
         <Row>
@@ -27,21 +22,16 @@ const Section1 = () => {
               <CardBody>
                 <CardText tag="div">
                   <p>
-                    Is your tone of voice missing personality? Does your content
-                    lack sparkle? Do you simply not have the time to write all
-                    the work that you need?
+                    Does your tone of voice need more personality? Could your content use some sparkle? Are you simply
+                    lacking time to write all the assets you need?
                   </p>
                   <p>Let me help.</p>
                   <p>
-                    Whether you&#39;re a brand, a business or an overstretched
-                    agency, I’ll bring 10+ years of B2B and B2C copywriting
-                    experience to your table. Let’s get creative!
+                    Whether you&#39;re a brand, a business or an overstretched agency, I’ll bring 10+ years of B2B and
+                    B2C copywriting experience to your table. Let’s get creative!
                   </p>
                   <p>
-                    <a
-                      className="btn btn-primary"
-                      href="mailto:chelsea@fierce-content.com"
-                    >
+                    <a className="btn btn-primary" href="mailto:chelsea@fierce-content.com">
                       Give me a roar
                     </a>
                   </p>

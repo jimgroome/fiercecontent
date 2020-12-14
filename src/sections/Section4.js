@@ -23,8 +23,7 @@ const Section4 = () => {
                 <CardText tag="div">
                   <p>
                     Great work! Collaborating should be fun, energising and
-                    inspiring. We&rsquo;re here for a good time, not a long
-                    time!
+                    inspiring.
                   </p>
                   <p>
                     Let&rsquo;s put some amazing ideas together... then get home
