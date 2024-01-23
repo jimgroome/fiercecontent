@@ -11,6 +11,14 @@ const Footer = () => {
         <Row>
           <Col xs="8">
             <p>&copy; 2019 Fierce Content</p>
+            <p>
+              Fierce Content Ltd is registered in England and Wales under the
+              company registration number 15364059.
+            </p>
+            <p>
+              Registered office address: 3 Greenway, Cranbrook, Kent, England,
+              TN17 3LL.
+            </p>
           </Col>
           <Col xs="4">
             <ul className="text-right list-inline">
