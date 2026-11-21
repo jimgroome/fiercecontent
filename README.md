@@ -19,4 +19,4 @@ npm run dev
 
 ## Analytics
 
-Production builds load Google Tag Manager container `GTM-P86CBR35` on every page. The container needs a published Google tag connected to the GA4 web stream. Enable **File downloads** in the stream’s Enhanced Measurement settings to record clicks on the calendar PDF as `file_download` events.
+Production builds load Google Tag Manager container `GTM-N9J6R4CG` on every page. In that container, publish a Google tag with Measurement ID `G-8X1X69KYKK` and the **Initialization – All Pages** trigger. Enable **File downloads** in the GA4 web stream’s Enhanced Measurement settings to record clicks on the calendar PDF as `file_download` events.

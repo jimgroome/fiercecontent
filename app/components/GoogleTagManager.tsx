@@ -1,6 +1,6 @@
 import Script from "next/script";
 
-const containerId = "GTM-P86CBR35";
+const containerId = "GTM-N9J6R4CG";
 const containerUrl = `https://www.googletagmanager.com/gtm.js?id=${containerId}`;
 
 export function GoogleTagManager() {
