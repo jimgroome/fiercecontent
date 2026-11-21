@@ -1,0 +1,200 @@
+.heroPeriod {
+  font-size: 0.87em;
+}
+
+.regionNav {
+  background: var(--blush);
+  border-bottom: 1px solid var(--line);
+}
+.regionNavInner {
+  display: flex;
+  align-items: center;
+  gap: clamp(18px, 3.6vw, 54px);
+  min-height: 69px;
+}
+.regionNavInner > :global(.eyebrow) {
+  color: #664053;
+}
+.regionNav a {
+  display: inline-flex;
+  gap: 9px;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 750;
+  text-decoration: none;
+}
+.regionName {
+  text-decoration: underline transparent;
+  text-underline-offset: 4px;
+  transition: text-decoration-color var(--hover-transition);
+}
+.regionCode {
+  background: #f9dbec;
+  color: var(--berry);
+  min-width: 34px;
+  padding: 3px 5px;
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.035em;
+  border-radius: 2px;
+  transition: background-color var(--hover-transition);
+}
+.regionNav a:is(:hover, :focus-visible) .regionName {
+  text-decoration-color: currentColor;
+}
+.regionNav a:is(:hover, :focus-visible) .regionCode {
+  background: #f5c5e0;
+}
+
+.hooksSection {
+  padding-block: 72px 90px;
+}
+.regionSection {
+  margin-top: 47px;
+}
+.regionHeading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  padding-bottom: 11px;
+  border-bottom: 2px solid var(--ink);
+  margin-bottom: 17px;
+}
+.regionHeading h3 {
+  font-size: clamp(1.5rem, 3vw, 2.23rem);
+  font-weight: 850;
+  letter-spacing: -0.045em;
+  line-height: 1.12;
+}
+.regionCount {
+  color: var(--muted);
+  white-space: nowrap;
+  font-size: 0.86rem;
+  font-weight: 650;
+}
+.hookGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.hook {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 23px;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 4px;
+}
+.hook:target, .watchList li:target {
+  outline: 2px solid var(--berry);
+  outline-offset: 4px;
+}
+.hookDate {
+  color: var(--berry);
+  font-size: 0.88rem;
+  font-weight: 850;
+}
+.hook h4 {
+  margin: 7px 0 19px;
+  font-size: clamp(1.32rem, 2vw, 1.65rem);
+  font-weight: 850;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+.hookDetails {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+}
+.hookDetails dt {
+  margin-bottom: 3px;
+  color: var(--muted);
+  font-size: 0.73rem;
+  font-weight: 850;
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+}
+.hookDetails dd {
+  line-height: 1.47;
+}
+.opportunity {
+  margin-top: auto;
+  padding: 13px 13px 13px 15px;
+  border-left: 3px solid #e3007b;
+  background: var(--blush);
+}
+.opportunity dt {
+  color: var(--berry);
+}
+.opportunity dd {
+  font-weight: 700;
+}
+.sourceLink {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.83rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+.sourceLink:is(:hover, :focus-visible) {
+  color: var(--berry);
+}
+
+.watchSection {
+  background: #f8eff5;
+  border-block: 1px solid var(--line);
+}
+.watchInner {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.85fr) minmax(0, 1.55fr);
+  gap: clamp(24px, 8vw, 122px);
+  padding-block: 75px;
+}
+.watchList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid var(--ink);
+}
+.watchList li {
+  padding: 19px 0;
+  border-bottom: 1px solid #deced9;
+}
+.watchList h3 {
+  font-size: 1.3rem;
+  font-weight: 820;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin-bottom: 7px;
+}
+.watchList .sourceLink {
+  margin-top: 9px;
+}
+
+@media (max-width: 1090px) {
+  .hook { padding: 18px; }
+}
+
+@media (max-width: 850px) {
+  .hookGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hooksSection, .watchInner { padding-block: 57px; }
+}
+
+@media (max-width: 620px) {
+  .regionNavInner { flex-wrap: wrap; gap: 0 22px; padding-top: 11px; }
+  .regionNavInner > :global(.eyebrow) { width: 100%; }
+  .regionName { display: none; }
+  .hooksSection, .watchInner { padding-block: 43px; }
+  .hookGrid { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .regionSection { margin-top: 34px; }
+  .watchInner { grid-template-columns: minmax(0, 1fr); }
+  .watchBreak { display: none; }
+}
