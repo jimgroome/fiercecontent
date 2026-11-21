@@ -11,6 +11,10 @@ const clients = [
   { file: "eleco", name: "Eleco", width: 360, height: 360 },
   { file: "resideo", name: "Resideo", width: 578, height: 225 },
   { file: "hso", name: "HSO", width: 360, height: 195 },
+  { file: "docuware", name: "DocuWare", width: 402, height: 90 },
+  { file: "onestock", name: "OneStock", width: 360, height: 56 },
+  { file: "hooley-brown", name: "Hooley Brown", width: 300, height: 169 },
+  { file: "whosoff", name: "WhosOff", width: 170, height: 97 },
 ];
 
 export function About() {
