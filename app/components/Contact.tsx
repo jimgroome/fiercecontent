@@ -2,17 +2,18 @@ import { email, emailHref } from "../contact-links";
 
 export function Contact() {
   return (
-    <section id="contact" className="contact-section" aria-labelledby="contact-title">
-      <div className="wrap contact-inner">
-        <h2 id="contact-title">What gets me fired up?</h2>
+    <section
+      id="contact"
+      className="contact-section"
+      aria-labelledby="contact-title"
+    >
+      <div className="wrap contact-inner contact-inner-stacked">
+        <h2 id="contact-title">Got something worth saying?</h2>
         <div className="contact-copy">
-          <p>Great work! Collaborating should be fun, energising and inspiring.</p>
+          <p>I&rsquo;ll help you say it better ;-)</p>
           <p>
-            Let&rsquo;s put some amazing ideas together... then get home to our families. It&rsquo;s all about balance.
+            <strong>Let&rsquo;s talk:</strong> <a href={emailHref}>{email}</a>
           </p>
-          <a className="button contact-button" href={emailHref}>
-            {email}
-          </a>
         </div>
       </div>
     </section>

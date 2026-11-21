@@ -12,14 +12,17 @@ export function Hero() {
           <span className="accent"> for your business.</span>
         </h1>
         <p className="hero-description">
-          Does your tone of voice need more personality? Could your content use
-          some sparkle? Are you simply lacking time to write all the assets you
-          need?
+          I&rsquo;m Chelsea, a freelance B2B copywriter specialising in thought
+          leadership for technology and professional services companies.
         </p>
         <p className="hero-description">
-          Whether you&rsquo;re a brand, a business or an overstretched agency, I&rsquo;ll
-          bring 15+ years of B2B copywriting experience to your table. Let&rsquo;s get
-          creative!
+          I make complex subjects clear, working closely with your experts to
+          give your business a stronger industry voice.
+        </p>
+        <p className="hero-description">
+          From whitepapers and eBooks to blog articles and website copy, I write
+          B2B content that gets your business noticed for its expertise and
+          onto prospective customers&rsquo; shortlists.
         </p>
         <a className="button primary-button" href={emailHref}>
           Give me a roar

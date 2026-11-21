@@ -3,20 +3,14 @@ import { linkedin } from "../contact-links";
 import { Eyebrow } from "./Eyebrow";
 
 const clients = [
-  { file: "verifone", name: "Verifone", width: 1000, height: 191 },
-  { file: "doddle", name: "Doddle", width: 750, height: 400 },
-  { file: "intel", name: "Intel", width: 2000, height: 1327 },
-  { file: "microsoft", name: "Microsoft", width: 2000, height: 427 },
-  { file: "mercedes", name: "Mercedes", width: 700, height: 192 },
-  { file: "msv", name: "MotorSport Vision", width: 553, height: 244 },
+  { file: "fujitsu", name: "Fujitsu", width: 280, height: 95 },
   { file: "sap", name: "SAP", width: 1719, height: 851 },
-  { file: "shoppertrak", name: "ShopperTrak", width: 476, height: 84 },
-  {
-    file: "autosport-international",
-    name: "Autosport International",
-    width: 2048,
-    height: 573,
-  },
+  { file: "microsoft", name: "Microsoft", width: 2000, height: 427 },
+  { file: "aptean", name: "Aptean", width: 360, height: 113 },
+  { file: "verifone", name: "Verifone", width: 1000, height: 191 },
+  { file: "eleco", name: "Eleco", width: 360, height: 360 },
+  { file: "resideo", name: "Resideo", width: 578, height: 225 },
+  { file: "hso", name: "HSO", width: 360, height: 195 },
 ];
 
 export function About() {
@@ -25,25 +19,32 @@ export function About() {
       <div className="wrap about-inner">
         <div className="section-intro">
           <Eyebrow>About</Eyebrow>
-          <h2 id="about-title">
-            Who am I<span className="accent">?</span>
-          </h2>
-          <p>
-            Chelsea Groome, Fierce Content founder and experienced B2B &amp; B2C
-            copywriter.
-          </p>
+          <h2 id="about-title">I&rsquo;ve written a thing or two</h2>
         </div>
         <div className="about-details">
-          <p>
-            I&rsquo;ve created content for big-name blue chips and ambitious start-up
-            brands alike, and partnered with many agencies along the way. After
-            15+ years in the business, I know that everybody has a story to
-            tell. It&rsquo;s my job to get the words right.
-          </p>
-          <ClientLogos />
-          <a className="text-link" href={linkedin}>
-            Fierce Content on LinkedIn
-          </a>
+          <div className="about-copy">
+            <p>
+              I&rsquo;ve spent over 15 years writing B2B content for some of the
+              world&rsquo;s biggest technology companies.
+            </p>
+            <p>
+              My experience covers everything from enterprise software and AI to
+              retail technology, manufacturing and financial services.
+              I&rsquo;ve also written extensively about telecoms, HR, supply
+              chain and logistics, construction and the food industry.
+            </p>
+            <p>
+              I work with technology and professional services companies across
+              the UK and internationally, getting to grips with specialist
+              subjects and interviewing the people who understand them best.
+            </p>
+            <a className="button primary-button" href={linkedin}>
+              Connect with me on LinkedIn
+            </a>
+          </div>
+          <div>
+            <ClientLogos />
+          </div>
         </div>
       </div>
     </section>

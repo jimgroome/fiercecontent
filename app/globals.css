@@ -73,6 +73,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
 
 .contact-section { background: var(--pink); color: var(--ink); }
 .contact-inner { padding-block: 64px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr); align-items: center; gap: clamp(24px, 7vw, 105px); }
+.contact-inner-stacked { grid-template-columns: minmax(0, 1fr); gap: 16px; }
 .contact-section h2 { max-width: 22ch; font-size: clamp(2.35rem, 4.1vw, 4.3rem); font-weight: 900; letter-spacing: -0.048em; line-height: 1; }
 .contact-copy p { font-weight: 580; }
 .contact-button { margin-top: 19px; color: white; background: var(--ink); max-width: 100%; overflow-wrap: anywhere; }
@@ -99,7 +100,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
   margin-top: 32px;
   padding-top: 17px;
@@ -123,13 +124,9 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
   letter-spacing: -0.035em;
 }
 
-.service > p {
-  margin-bottom: 18px;
-  color: var(--muted);
-}
-
 .offerings {
-  margin: auto 0 0;
+  flex: 1;
+  margin: 0;
   padding: 13px 14px 13px 32px;
   border-left: 3px solid #e3007b;
   background: var(--blush);
@@ -160,33 +157,38 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
 }
 
 .about-inner {
-  display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.55fr);
-  gap: clamp(24px, 8vw, 122px);
   padding-block: 75px;
 }
 
 .about-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(24px, 5vw, 76px);
+  margin-top: 24px;
   padding-top: 19px;
   border-top: 2px solid var(--ink);
 }
 
+.about-copy p + p {
+  margin-top: 12px;
+}
+
 .client-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1px;
-  margin: 24px 0 16px;
+  margin: 0;
   padding: 0;
-  border: 1px solid var(--line);
+  border: 1px solid var(--pink);
   border-radius: 4px;
-  background: var(--line);
+  background: var(--pink);
   list-style: none;
   overflow: hidden;
 }
 
 .client-list li {
   display: grid;
-  min-height: 84px;
+  min-height: 88px;
   padding: 12px;
   place-items: center;
   background: white;
@@ -197,18 +199,8 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
   width: auto;
   height: auto;
   max-width: min(100%, 124px);
-  max-height: 54px;
+  max-height: 64px;
   object-fit: contain;
-}
-
-.text-link {
-  color: var(--berry);
-  font-weight: 750;
-  text-underline-offset: 4px;
-}
-
-.text-link:is(:hover, :focus-visible) {
-  color: var(--ink);
 }
 
 .contact-copy p + p {
@@ -261,7 +253,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
   .hero h1 { font-size: clamp(2.8rem, 7.3vw, 4.85rem); }
   .hero-break { display: none; }
   .services-section, .about-inner { padding-block: 57px; }
-  .service-grid { grid-template-columns: minmax(0, 1fr); }
+  .client-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 700px) {
@@ -277,12 +269,12 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
 
 @media (max-width: 620px) {
   .wrap { width: calc(100% - 36px); }
-  .about-inner, .contact-inner { grid-template-columns: minmax(0, 1fr); }
+  .about-details, .contact-inner { grid-template-columns: minmax(0, 1fr); }
   .hero-inner { padding-block: 42px 48px; }
   .hero h1 { font-size: clamp(2.35rem, 10vw, 4.75rem); margin-block: 15px; }
   .primary-button { margin-top: 20px; }
   .services-section, .about-inner, .contact-inner { padding-block: 43px; }
-  .service-grid { gap: 12px; }
+  .service-grid { grid-template-columns: minmax(0, 1fr); gap: 12px; }
   .footer-inner { flex-direction: column; }
 }
 

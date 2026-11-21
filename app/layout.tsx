@@ -8,7 +8,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Fierce Content | Strongly worded copy for your business, brand or agency",
   description:
-    "Fierce Content is Chelsea Groome\u2019s copywriting and content marketing business, offering B2B and B2C copywriting, creative ideas and content strategy.",
+    "Chelsea Groome is a freelance B2B copywriter specialising in thought leadership for technology and professional services companies.",
   metadataBase: new URL("https://fierce-content.com"),
   alternates: { canonical: "/" },
   icons: {
