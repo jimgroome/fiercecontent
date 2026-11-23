@@ -1,9 +1,15 @@
-import { Eyebrow } from "../components/Eyebrow";
-import { watchlist } from "./calendar";
+import { Eyebrow } from "../Eyebrow";
 import { SourceLink } from "./SourceLink";
 import styles from "./calendar.module.css";
 
-export function Watchlist() {
+type WatchlistEntry = {
+  id: string;
+  title: string;
+  text: string;
+  source?: string;
+};
+
+export function Watchlist({ entries }: { entries: WatchlistEntry[] }) {
   return (
     <section id="watchlist" className={styles.watchSection} aria-labelledby="watch-title">
       <div className={`wrap ${styles.watchInner}`}>
@@ -15,11 +21,11 @@ export function Watchlist() {
           <p>Track proposals, planned milestones and changes already in effect.</p>
         </div>
         <ul className={styles.watchList}>
-          {watchlist.map(({ id, title, text, source }) => (
+          {entries.map(({ id, title, text, source }) => (
             <li key={id} id={id}>
               <h3>{title}</h3>
               <p>{text}</p>
-              <SourceLink url={source} label="Follow" />
+              {source && <SourceLink url={source} label="Follow" />}
             </li>
           ))}
         </ul>

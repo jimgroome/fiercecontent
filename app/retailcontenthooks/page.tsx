@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { IndustryHooks } from "../components/content-hooks/IndustryHooks";
+import { Watchlist } from "../components/content-hooks/Watchlist";
+import styles from "../components/content-hooks/calendar.module.css";
 import { Eyebrow } from "../components/Eyebrow";
 import { SiteHeader } from "../components/SiteHeader";
 import { email, emailHref } from "../contact-links";
-import { IndustryHooks } from "./IndustryHooks";
-import { Watchlist } from "./Watchlist";
-import styles from "./calendar.module.css";
+import { regions, watchlist } from "./calendar";
 
 export const metadata: Metadata = {
   title: "Retail Industry Content Hooks 2027 | Fierce Content",
@@ -32,8 +33,12 @@ export default function RetailContentHooksPage() {
 
       <main id="main" tabIndex={-1}>
         <CalendarHero />
-        <IndustryHooks />
-        <Watchlist />
+        <IndustryHooks
+          regions={regions}
+          introduction="What’s changing for retailers and the stories you can tell."
+          impactLabel="Retail impact"
+        />
+        <Watchlist entries={watchlist} />
       </main>
 
       <CalendarContact />

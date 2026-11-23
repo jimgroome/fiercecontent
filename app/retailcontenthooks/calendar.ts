@@ -1,14 +1,6 @@
-export type Hook = {
-  id: string;
-  date: string;
-  title: string;
-  source: string;
-  impact: string;
-  technology: string;
-  opportunity: string;
-};
+import type { HookRegion } from "../components/content-hooks/IndustryHooks";
 
-export const regions: { id: "uk" | "eu" | "usa"; label: string; name: string; hooks: Hook[] }[] = [
+export const regions: HookRegion[] = [
   {
     id: "uk",
     label: "UK",
@@ -20,7 +12,7 @@ export const regions: { id: "uk" | "eu" | "usa"; label: string; name: string; ho
         title: "Employment Rights Act rollout",
         source: "https://www.gov.uk/government/publications/implementing-the-plan-to-make-work-pay-and-employment-rights-act/plan-to-make-work-to-pay-and-employment-rights-act-timeline-update",
         impact: "Unfair dismissal protections change in January. Further measures include mandatory equality and menopause action plans for qualifying employers in April and flexible working reforms in October. Guaranteed-hours measures have no confirmed start date.",
-        technology: "Workforce management, HRIS, rota planning, payroll and employee records.",
+        relevance: "Workforce management, HRIS, rota planning, payroll and employee records.",
         opportunity: "What the 2027 employment changes mean for multi-site retailers managing large hourly-paid workforces.",
       },
       {
@@ -29,7 +21,7 @@ export const regions: { id: "uk" | "eu" | "usa"; label: string; name: string; ho
         title: "Consumer subscription contracts",
         source: "https://www.gov.uk/government/publications/subscription-contracts",
         impact: "New consumer subscription protections affect pre-contract information, renewal reminders, cancellation and cooling-off processes for covered contracts.",
-        technology: "Subscription commerce, ecommerce checkout, recurring billing, CRM and customer communications.",
+        relevance: "Subscription commerce, ecommerce checkout, recurring billing, CRM and customer communications.",
         opportunity: "How retailers can redesign subscription sign-up, renewal and cancellation journeys without creating unnecessary friction.",
       },
       {
@@ -38,7 +30,7 @@ export const regions: { id: "uk" | "eu" | "usa"; label: string; name: string; ho
         title: "Online marketplace VAT",
         source: "https://www.gov.uk/government/publications/factsheet-on-extending-vat-online-marketplace-liability-rules/extending-vat-online-marketplace-liability-rules-factsheet",
         impact: "The government plans to extend VAT collection responsibilities to online marketplaces for specified UK-business sales from October 2027. Detailed implementation legislation remains to follow.",
-        technology: "Marketplace platforms, seller onboarding, tax engines, settlement and finance.",
+        relevance: "Marketplace platforms, seller onboarding, tax engines, settlement and finance.",
         opportunity: "How marketplaces can prepare seller data, tax calculations and settlement processes for the new liability model.",
       },
       {
@@ -47,7 +39,7 @@ export const regions: { id: "uk" | "eu" | "usa"; label: string; name: string; ho
         title: "Packaging EPR and recyclability ratings",
         source: "https://www.gov.uk/government/publications/assess-packaging-recyclability-recyclability-assessment-methodology-ram-2027",
         impact: "RAM 2027 applies to packaging placed on the market during 2027. Recyclability influences modulated producer fees for obligated businesses.",
-        technology: "Product information, packaging data, supplier systems and finance analytics.",
+        relevance: "Product information, packaging data, supplier systems and finance analytics.",
         opportunity: "How retailers can improve packaging data and assess the commercial implications of material choices.",
       },
       {
@@ -56,7 +48,7 @@ export const regions: { id: "uk" | "eu" | "usa"; label: string; name: string; ho
         title: "Deposit Return Scheme",
         source: "https://www.gov.uk/guidance/deposit-return-scheme-drinks-producer-and-retailer-responsibilities",
         impact: "Covered drinks containers enter the deposit system in England, Scotland and Northern Ireland. Participating retailers will need return and refund processes. Wales is following a separate policy path.",
-        technology: "POS, reverse vending, payments, store operations and stock reconciliation.",
+        relevance: "POS, reverse vending, payments, store operations and stock reconciliation.",
         opportunity: "How retailers can handle deposits and returns without slowing checkout or adding avoidable store workload.",
       },
       {
@@ -65,7 +57,7 @@ export const regions: { id: "uk" | "eu" | "usa"; label: string; name: string; ho
         title: "Tobacco age-of-sale rules",
         source: "https://www.gov.uk/guidance/selling-tobacco-herbal-smoking-products-and-cigarette-papers",
         impact: "From 1 January, sales of tobacco and related covered products to anyone born on or after 1 January 2009 are prohibited.",
-        technology: "POS, age verification, store operations and staff training.",
+        relevance: "POS, age verification, store operations and staff training.",
         opportunity: "How convenience retailers can implement a birth-date-based sales rule consistently across stores and checkouts.",
       },
     ],
@@ -81,7 +73,7 @@ export const regions: { id: "uk" | "eu" | "usa"; label: string; name: string; ho
         title: "Instant euro payments expansion",
         source: "https://www.ecb.europa.eu/paym/retail/instant_payments/html/instant_payments_regulation.en.html",
         impact: "Payment providers in non-euro EU countries face phased obligations to receive and send instant euro transfers and verify payees. The obligations fall primarily on payment service providers.",
-        technology: "Payment acceptance, reconciliation, treasury and fraud prevention.",
+        relevance: "Payment acceptance, reconciliation, treasury and fraud prevention.",
         opportunity: "What faster account-to-account payments could mean for retailers operating across European markets.",
       },
       {
@@ -90,7 +82,7 @@ export const regions: { id: "uk" | "eu" | "usa"; label: string; name: string; ho
         title: "Unsold consumer goods disclosure format",
         source: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202600002",
         impact: "The EU implementing regulation standardises disclosures about discarded unsold consumer products for businesses subject to the underlying reporting obligation.",
-        technology: "Inventory analytics, returns, WMS and reporting.",
+        relevance: "Inventory analytics, returns, WMS and reporting.",
         opportunity: "How better returns and inventory data can help retailers reduce unsold stock and account for its disposal.",
       },
       {
@@ -99,7 +91,7 @@ export const regions: { id: "uk" | "eu" | "usa"; label: string; name: string; ho
         title: "Battery digital passports",
         source: "https://single-market-economy.ec.europa.eu/single-market/digital-product-passport/batteries_en",
         impact: "Qualifying electric-vehicle, light-means-of-transport and industrial batteries placed on the EU market require digital passports.",
-        technology: "Product data, PIM, traceability and supplier information.",
+        relevance: "Product data, PIM, traceability and supplier information.",
         opportunity: "What retailers of e-bikes and other battery-powered products need from suppliers to support product information requirements.",
       },
     ],
@@ -115,7 +107,7 @@ export const regions: { id: "uk" | "eu" | "usa"; label: string; name: string; ho
         title: "New state consumer privacy laws",
         source: "https://www.venable.com/insights/publications/2026/07/2026-mid-year-state-privacy-law-update",
         impact: "Louisiana and Oklahoma introduce comprehensive consumer privacy laws in January. Alabama follows in May. Applicability thresholds and obligations differ by state.",
-        technology: "Customer data platforms, consent management, loyalty and marketing automation.",
+        relevance: "Customer data platforms, consent management, loyalty and marketing automation.",
         opportunity: "How retailers can manage customer-data rights across an increasingly fragmented US regulatory environment.",
       },
       {
@@ -124,7 +116,7 @@ export const regions: { id: "uk" | "eu" | "usa"; label: string; name: string; ho
         title: "Connecticut surveillance pricing",
         source: "https://www.cga.ct.gov/2026/rpt/pdf/2026-R-0081.pdf",
         impact: "Connecticut restricts surveillance pricing by retailers and third-party delivery services, with related online disclosure requirements for other covered businesses.",
-        technology: "Retail pricing engines, personalisation, ecommerce and governance.",
+        relevance: "Retail pricing engines, personalisation, ecommerce and governance.",
         opportunity: "How retail pricing teams can use customer data responsibly as states place limits on surveillance pricing.",
       },
       {
@@ -133,7 +125,7 @@ export const regions: { id: "uk" | "eu" | "usa"; label: string; name: string; ho
         title: "New Jersey personalised grocery pricing",
         source: "https://nj.gov/governor/news/2026/approved/20260723a.shtml",
         impact: "New Jersey enacted restrictions on using shoppers\u2019 personal information to charge different prices for identical grocery products. Retailers should verify operative dates and scope before publishing deadline-led guidance.",
-        technology: "Grocery pricing, loyalty platforms and customer analytics.",
+        relevance: "Grocery pricing, loyalty platforms and customer analytics.",
         opportunity: "How grocery retailers can distinguish legitimate promotions from personal-data-driven price discrimination.",
       },
     ],
