@@ -121,10 +121,10 @@ export const regions: HookRegion[] = [
       },
       {
         id: "grocery-pricing",
-        date: "2027 · verify dates",
+        date: "1 August 2027",
         title: "New Jersey personalised grocery pricing",
         source: "https://nj.gov/governor/news/2026/approved/20260723a.shtml",
-        impact: "New Jersey enacted restrictions on using shoppers\u2019 personal information to charge different prices for identical grocery products. Retailers should verify operative dates and scope before publishing deadline-led guidance.",
+        impact: "New Jersey’s Fair Price Protection Act restricts using shoppers’ personal information to charge different prices for identical grocery products. Most provisions take effect on 1 August 2027.",
         relevance: "Grocery pricing, loyalty platforms and customer analytics.",
         opportunity: "How grocery retailers can distinguish legitimate promotions from personal-data-driven price discrimination.",
       },
@@ -154,7 +154,7 @@ export const watchlist = [
   {
     id: "right-to-repair",
     title: "EU right to repair",
-    text: "Consumer repair rights began applying in 2026. The EU repair platform is planned for July 2027, creating an opening to examine repair and after-sales models.",
+    text: "Consumer repair rights began applying in 2026. The EU repair platform is now expected in January 2028, creating an opening to examine repair and after-sales models.",
     source: "https://commission.europa.eu/news-and-media/news/right-repair-new-consumer-rights-easy-and-attractive-repairs-2026-07-31_en",
   },
   {

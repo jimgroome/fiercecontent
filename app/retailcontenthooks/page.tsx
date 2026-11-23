@@ -10,7 +10,7 @@ import { regions, watchlist } from "./calendar";
 export const metadata: Metadata = {
   title: "Retail Industry Content Hooks 2027 | Fierce Content",
   description:
-    "A 2027 content planning guide for retail tech marketers, with industry developments across the UK, EU and USA, a watchlist and a month-by-month calendar.",
+    "A 2027 content planning guide for retail tech marketers, with industry developments across the UK, EU and USA and a watchlist.",
   alternates: { canonical: "/retailcontenthooks/" },
 };
 
@@ -60,7 +60,7 @@ function CalendarHero() {
           laws to changes in employment rights, there&rsquo;s plenty for retailers to prepare for
           &ndash; and retail technology companies to talk about.
         </p>
-        <a className="button primary-button" href="/fierce-content-retail-industry-hooks-2027.pdf" download>
+        <a className="button primary-button" href="/fierce-content-retail-industry-hooks-2027.pdf?v=2" download>
           Download as PDF
         </a>
       </div>
@@ -72,14 +72,16 @@ function CalendarContact() {
   return (
     <footer id="contact" className="contact-section">
       <div className="wrap contact-inner">
-        <h2>Want more leads from your 2027 content? Tie it to the industry agenda.</h2>
+        <h2>Want more engagement and leads from your 2027 content? Tie it to the industry agenda.</h2>
         <div className="contact-copy">
           <p>
             I&rsquo;m Chelsea, a retail technology copywriter with over 15 years&rsquo; experience
             writing for global tech companies. I specialise in thought leadership, turning complex
-            industry issues and technical expertise into articles, whitepapers, ebooks and campaign
-            content that helps retail tech vendors engage prospects and generate leads.
+            industry issues and technical expertise into compelling articles, whitepapers, ebooks and
+            more. I help retail tech companies demonstrate their expertise, engage prospective
+            customers and generate leads.
           </p>
+          <p>Email me to turn these hooks into campaigns that get results.</p>
           <a className="button contact-button" href={contactHref}>{email}</a>
         </div>
       </div>
